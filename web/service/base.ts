@@ -181,7 +181,7 @@ const baseFetch = (
                   Toast.notify({ type: 'error', message: 'Invalid token' })
                   return
                 }
-                const loginUrl = 'https://low-code-content.paas.cmbchina.com/front/view?pageId=o7i111c7Bw'
+                const loginUrl = `${globalThis.location.origin}/signin`
                 if (IS_CE_EDITION) {
                   bodyJson.then((data: any) => {
                     if (data.code === 'not_setup') {
